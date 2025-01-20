@@ -14,11 +14,13 @@
 </head>
 <body>
     <header id="main-header">
-        <nav>
+        <nav class="global-header">
             <img src="img/fav.png" alt="Logo">
-            <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <ul>
+                <li> <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -90,7 +92,7 @@
                 <h3>VOKSEN 18+</h3>
                     <label>
                         FORNAVN (IFØLGE PASS):
-                        <input type="text" name="fornavn" maxlength="45" required>
+                        <input type="text" name="fornavn" value="" maxlength="45" required>
                     </label>
                     <label>
                         ETTERNAVN (IFØLGE PASS):

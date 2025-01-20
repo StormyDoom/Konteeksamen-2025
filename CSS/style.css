@@ -9,14 +9,93 @@ body{
 }
 
 #main-header{
-    width: 100%;
-    font-size: 220%;
-    padding: 10px;
-    margin: 5px;
-    margin: 0;
-    justify-content: right;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: auto;
+
+}
+
+.global-header{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.5rem;
+
+    img{
+        max-width: 100px;
+        max-height: 80px;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: baseline;
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+#blue-line{
+    border-bottom: solid;
+    border-color: #1ca2c1;
+}
+
+.quicksearch{
+    display: grid;
+    width: 350px;
+    border-width: 0 1px;
+    border: transparent;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 5px;
+
+    select{
+        width: 330px;
+    }
+
+    select[name=lengde]{
+        width: 165px;
+    }
+
+    input[type=date]{
+        width: 165px;
+    }   
+
+    input[type=submit]{
+        width: 330px;
+        font-family: "Montserrat", sans-serif;
+        background-color: #ffcf40;
+        height: 40px;
+        font-size: large;
+        font-weight: 900;
+        border-radius: 5px;
+    }
+}
+
+.quicksearch nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quicksearch-form{
+    display: grid;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+
+.date-and-length{
+    width: 150px;
+}
+    
+
+img{
+    max-width: 200px;
 }
 
 a{
@@ -27,19 +106,3 @@ a{
 main{
     max-width: 1000px;
 }
-
-.scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-  }
-  
-.scrollmenu a {
-    display: inline-block;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-.scrollmenu a:hover {
-    background-color: #777;
-  }

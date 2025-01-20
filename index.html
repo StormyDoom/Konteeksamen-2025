@@ -14,58 +14,60 @@
 </head>
 <body>
     <header id="main-header">
-        <nav>
+        <nav class="global-header">
             <img src="img/fav.png" alt="Logo">
-            <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <ul>
+                <li> <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
         </nav>
-        <img src="img/sea-4768869_1920.jpg" alt="Sjø">
-        <section class="scrollmenu">
-            <a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
-            <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
-            <a href="#"><i class="fa-solid fa-city"></i>Storby</a>
-            <a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a>
-            <a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjoner</a>
-            <i class="fa-solid fa-arrow-right"></i>
-        </section>
-        <section>
-                <form>
-                    <label>
-                        Fra
+        <img src="img/sea-4768869_1920.jpg" alt="Sjø" id="background-image">
+        <section class="quicksearch">
+            <nav>
+                <a href="#" id="blue-line"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
+                <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
+                <a href="#"><i class="fa-solid fa-city"></i>Storby</a>
+                <a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a>
+                <a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjoner</a>
+                <i class="fa-solid fa-arrow-right"></i>
+            </nav>
+                <form class="quicksearch-form">
+                    <fieldset>
+                        <legend>Fra</legend>
                         <select name="fra">
                         <option value="oslo lufthavn">Oslo Lufthavn</option>
                         <option value="torp sandefjord lufthavn">Torp Sandefjord Lufthavn</option>
                         <option value="bergen lufthavn">Bergen Lufthavn</option>
                         <option value="alta lufthavn">Alta Lufthavn</option>
                         </select> 
-                    </label>
-                    <label>
-                        Til
+                    </fieldset>
+                    <fieldset>
+                        <legend>Til</legend>
                         <select name="til">
                             <option value="albania">Albania</option>
                             <option value="danmark">Danmark</option>
                             <option value="finland">Finland</option>
                             <option value="hellas">Hellas</option>
                         </select>
-                    </label>
-                    <label>
-                        Reiselengde
+                    </fieldset>
+                    <fieldset class="date-and-length">
+                        <legend>Reiselengde</legend>
                         <select name="lengde">
                             <option value="mindre enn 1 uke">Mindre enn 1 uke</option>
                             <option value="1 uke">1 uke</option>
                             <option value="2 uker">2 uker</option>
                             <option value="mer enn 2 uker">Mer enn 2 uker</option>
                         </select>
-                    </label>
-                    <label>
-                        Velg dato
+                    </fieldset>
+                    <fieldset class="date-and-length">
+                        <legend>Velg dato</legend>
                         <input type="date" name="dato" id="dato">
-                    </label>
-                    <label>
-                        Antall reisende
+                    </fieldset>
+                    <fieldset>
+                        <legend>Antall reisende</legend>
                         <input type="number" name="travellers" id="travellers" placeholder="2">
-                    </label>
+                    </fieldset>
                     <input type="submit" value="Søk">
                 </form>
         </section>
