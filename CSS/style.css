@@ -481,6 +481,111 @@ footer{
     font-size: small;
 }
 
+.list-info{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: #1ca2c1;
+    padding-left: 0;
+    font-size: large;
+
+    
+    a{
+        color:#ffffff;
+    }
+
+    i{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+.payment{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 410px;
+    border-width: 400px;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 10px;
+    background-color: #f6f5f2;
+
+    label{
+        font-weight: 600;
+    }
+
+    p{
+        font-weight: 600;
+    }
+
+    select{
+        width: 300px;
+    }
+
+    input[type=text]{
+        width: 400px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type=date]{
+        width: 400px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    input[type=radio]{
+        width: 30px;
+        margin-left: -7px;
+        border: 0px;
+        display: inline;
+    }
+
+    a{
+        width: 130px;
+        height: 40px;
+        background-color: #ffcf40;
+        font-weight: 800;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    input[type=number]{
+        width: 300px;
+    }
+
+    select[name=land]{
+        width: 400px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type=tel]{
+        width: 400px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type=email]{
+        width: 400px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 
     
 
