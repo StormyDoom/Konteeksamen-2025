@@ -13,12 +13,6 @@ main{
     max-width: 1000px;
 }
 
-#main-header {
-    display: grid;
-    grid-template-rows: auto 1fr auto auto;
-    grid-template-columns: auto;
-
-}
 
 .global-header {
     display: flex;
@@ -51,54 +45,71 @@ main{
 
 .quicksearch {
     display: grid;
-    width: 300px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    max-width: 400px;
     border-width: 400px;
     border-radius: 10px;
     padding: 0px;
-    margin: 5px;
+    margin: 5px auto;
+    border: solid;
+    border-color: #ddd8ca;
 
     select {
-        width: 300px;
+        width: 100%;
+        background-color: #ffffff;
+        margin-bottom: 10px;
     }
 
     select[name=lengde] {
-        width: 150px;
+        background-color: #ffffff;
     }
 
     input[type=date] {
-        width: 150px;
+        background-color: #ffffff;
+        margin-bottom: 1rem;
     }
 
     input[type=submit] {
-        width: 330px;
+        width: 100%;
         font-family: "Montserrat", sans-serif;
         background-color: #ffcf40;
         height: 40px;
         font-size: large;
         font-weight: 900;
         border-radius: 5px;
+        margin-bottom: 1rem;
     }
 
     input[type=number] {
-        width: 300px;
+        width: 100%;
+        background-color: #ffffff;
+        margin-bottom: 1rem;
     }
 }
 
 .quicksearch nav {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+
 }
 
 .quicksearch-form {
-    display: grid;
+    grid-row: 2/5;
     margin-top: 20px;
     gap: 15px;
 }
 
 
 .date-and-length {
-    width: 150px;
+    width: 200px;
+    display: flex;
+    margin-bottom: 1rem;
 }
 
 .offer {
@@ -220,7 +231,7 @@ main{
     }
 
     a {
-        display: block;
+        width: fit-content;
     }
 }
 
@@ -323,46 +334,45 @@ footer {
 }
 
 .slideshow-container {
-    max-width: 700px;
+    width: 100%;
     margin: auto;
     overflow-x: scroll;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     height: 300px;
-    width: 390px;
     margin: 0;
     align-items: flex-start;
 }
 
 #slideshow-1 {
     height: 300px;
-    max-width: 600px;
+    min-width: 460px;
 }
 
 #slideshow-2 {
     height: 300px;
-    max-width: 390px;
+    min-width: 460px;
 }
 
 #slideshow-3 {
     height: 300px;
-    max-width: 390px;
+    min-width: 460px;
 }
 
 #slideshow-4 {
     height: 300px;
-    max-width: 390px;
+    min-width: 460px;
 }
 
 #slideshow-5 {
     height: 300px;
-    max-width: 390px;
+    min-width: 460px;
 }
 
 #slideshow-6 {
     height: 300px;
-    max-width: 390px;
+    min-width: 460px;
 }
 
 .overview {
@@ -421,7 +431,7 @@ footer {
 }
 
 .facility {
-    flex: 150px;
+    flex: 200px;
     display: flex;
     align-items: center;
 }
@@ -595,12 +605,12 @@ footer {
 
     a {
         width: 130px;
-        height: 40px;
         background-color: #ffcf40;
         font-weight: 800;
         border-radius: 5px;
         text-align: center;
         margin-top: 10px;
+        padding: 10px;
     }
 
     input[type=number] {

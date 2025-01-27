@@ -13,7 +13,7 @@
     <title>Hotell</title>
 </head>
 <body>
-    <header id="main-header">
+    <header>
         <nav class="global-header">
             <img src="img/fav.png" alt="Logo">
             <ul>
@@ -22,7 +22,8 @@
                 <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
-        <section class="slideshow-container">
+    </header>
+        <header class="slideshow-container">
                     <img src="img/landscape-2016308_640.jpg" alt="Basseng" id="slideshow-1">
                     <img src="img/beach-666122_640.jpg" alt="Strand med hus" id="slideshow-2">
                     <img src="img/beach-1836467_640.jpg" alt="Strand med mennesker" id="slideshow-3">
@@ -37,13 +38,12 @@
                 <a href="#slideshow-5"></a>
                 <a href="#slideshow-6"></a>
             </nav>
-        </section>
-        <section class="overview">
+        </header>
+        <header class="overview">
             <p class="blue-line-text">Oversikt</p>
             <p>Fasiliteter</p>
             <p>Rom</p>
-        </section>
-    </header>
+        </header>
     <main>
         <section class="info">
             <h2>Parga Beach</h2>
@@ -136,18 +136,16 @@
             </article>
         </section>
     </main>
-        <footer>
-            <section>
-                <nav>
-                    <ul>
-                        <li><img src="flags/sweden.png" alt="Sverige flagg">Sverige</li>
-                        <li><img src="flags/denmark.png" alt="Danmark flagg">Danmark</li>
-                        <li><img src="flags/norway.png" alt="Norge flagg">Norge</li>
-                        <li><img src="flags/material.png" alt="Finland flagg">Suomi</li>
-                        <li><img src="flags/netherlands.png" alt="Nederland flagg">Nederland</li>
-                    </ul>
-                </nav>
-            </section>
+    <footer>
+        <section class="flags-footer">
+                <ul>
+                    <li><img src="flags/sweden.png" alt="Sverige flagg">Sverige</li>
+                    <li><img src="flags/denmark.png" alt="Danmark flagg">Danmark</li>
+                    <li><img src="flags/norway.png" alt="Norge flagg">Norge</li>
+                    <li><img src="flags/material.png" alt="Finland flagg">Suomi</li>
+                    <li><img src="flags/netherlands.png" alt="Nederland flagg">Nederland</li>
+                </ul>
+        </section>
         <section>
             <h4>BETALINGSMETODER</h4>
             <i class="fa-brands fa-cc-visa"></i>
@@ -156,9 +154,10 @@
             <i class="fa-brands fa-cc-apple-pay"></i>
             <i class="fa-brands fa-cc-amazon-pay"></i>
         </section>
-        <section>
+        <div class="footer-wrapper">
+            <section>
             <h4>NYHETER & TILBUD</h4>
-            <form>
+            <form class="newsletter">
                 <fieldset>
                     <legend>Meld deg på nyhetsbrev her</legend>
                     <input type="email" name="email" placeholder="ola@eksempel.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
@@ -166,7 +165,7 @@
                 </fieldset>
             </form>
             <a href="#">Kjøp reisegavekort</a>
-        </section>
+            </section>
             <section>
                 <nav>
                     <h4>KUNDESERVICE</h4>
@@ -178,7 +177,8 @@
                     </ul>
                 </nav>
             </section>
-            <section>
+        </div>
+            <section class="social-media-footer">
                 <h4>SOSIALE MEDIER</h4>
                 <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                 <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
@@ -186,6 +186,6 @@
                 <a target="-blank" href="https://www.tiktok.com/explore"><i class="fa-brands fa-tiktok"></i></a>
                 <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
             </section>
-        </footer>
+    </footer>
     </body>
 </html>
