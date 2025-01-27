@@ -66,7 +66,7 @@
                     </fieldset>
                     <fieldset>
                         <legend>Antall reisende</legend>
-                        <input type="number" name="travellers" id="travellers" placeholder="2">
+                        <input type="number" name="travellers" id="travellers" placeholder="2" min="1">
                     </fieldset>
                     <input type="submit" value="Søk">
                 </form>
@@ -74,7 +74,6 @@
     </header>
     <main>
         <section class="offer">
-            <img src="img/holiday-2733322_1280.jpg" alt="Dame i basseng">
             <article class="bluebox">
                 <h3>Bestill sommerens beste uke</h3>
                 <p>Fly + hotell, 7 dager</p>
@@ -139,8 +138,7 @@
         </section>
     </main>
     <footer>
-        <section>
-            <nav>
+        <section class="flags-footer">
                 <ul>
                     <li><img src="flags/sweden.png" alt="Sverige flagg">Sverige</li>
                     <li><img src="flags/denmark.png" alt="Danmark flagg">Danmark</li>
@@ -148,7 +146,6 @@
                     <li><img src="flags/material.png" alt="Finland flagg">Suomi</li>
                     <li><img src="flags/netherlands.png" alt="Nederland flagg">Nederland</li>
                 </ul>
-            </nav>
         </section>
         <section>
             <h4>BETALINGSMETODER</h4>
@@ -158,9 +155,10 @@
             <i class="fa-brands fa-cc-apple-pay"></i>
             <i class="fa-brands fa-cc-amazon-pay"></i>
         </section>
-        <section>
+        <div class="footer-wrapper">
+            <section>
             <h4>NYHETER & TILBUD</h4>
-            <form>
+            <form class="newsletter">
                 <fieldset>
                     <legend>Meld deg på nyhetsbrev her</legend>
                     <input type="email" name="email" placeholder="ola@eksempel.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
@@ -168,7 +166,7 @@
                 </fieldset>
             </form>
             <a href="#">Kjøp reisegavekort</a>
-        </section>
+            </section>
             <section>
                 <nav>
                     <h4>KUNDESERVICE</h4>
@@ -180,7 +178,8 @@
                     </ul>
                 </nav>
             </section>
-            <section>
+        </div>
+            <section class="social-media-footer">
                 <h4>SOSIALE MEDIER</h4>
                 <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                 <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
