@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="global-header">
-            <img src="img/fav.png" alt="Logo">
+            <a href="index.html"><img src="img/fav.png" alt="Logo"></a>
             <ul>
                 <li> <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
@@ -23,15 +23,17 @@
             </ul>
         </nav>
     </header>
-        <img src="img/sea-4768869_1920.jpg" alt="Sjø" id="background-image">
         <header class="quicksearch">
+            <img src="img/sea-4768869_1920.jpg" alt="Sjø" id="background-image">
             <nav>
-                <a href="#" class="blue-line"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
-                <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
-                <a href="#"><i class="fa-solid fa-city"></i>Storby</a>
-                <a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a>
-                <a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjoner</a>
-                <i class="fa-solid fa-arrow-right"></i>
+                <ul>
+                    <li><a href="#" class="blue-line"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
+                    <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
+                    <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
+                    <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjoner</a></li>
+                </ul>
+                <i class="scroll-indicator fa-solid fa-arrow-right"></i>
             </nav>
                 <form class="quicksearch-form">
                     <fieldset>
@@ -53,7 +55,7 @@
                         </select>
                     </fieldset>
                 <div class="date-and-length">
-                    <fieldset>
+                    <fieldset class="flex-grow">
                         <legend>Reiselengde</legend>
                         <select name="lengde">
                             <option value="mindre enn 1 uke">Mindre enn 1 uke</option>
@@ -62,7 +64,7 @@
                             <option value="mer enn 2 uker">Mer enn 2 uker</option>
                         </select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="flex-grow">
                         <legend>Velg dato</legend>
                         <input type="date" name="dato" id="dato">
                     </fieldset>

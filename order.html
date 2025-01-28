@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="global-header">
-            <img src="img/fav.png" alt="Logo">
+            <a href="index.html"><img src="img/fav.png" alt="Logo"></a>
             <ul>
                 <li> <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
@@ -36,9 +36,10 @@
             </ul>
         </nav>
         <section>
-            <h2>Oppgi dine bestillingsopplysninger</h2>
-            <h3>VOKSEN 18+ HOVEDBESTILLER</h3>
+            <h2 class="head-pay">Oppgi dine bestillingsopplysninger</h2>
             <form method="post" action="#" class="payment">
+            <fieldset class="payment-fieldset">
+                <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
                 <label>
                     FORNAVN (IFØLGE PASS):
                     <input type="text" name="fornavn" maxlength="45" required>
@@ -60,7 +61,7 @@
                     MANN
                     <input type="radio" name="valg">
                 </label>
-                <label>
+                <label class="email">
                     E-POSTADRESSE:
                     <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                 </label>
@@ -89,7 +90,9 @@
                         <option value="danmark">Danmark</option>
                     </select>
                 </label>
-                <h3>VOKSEN 18+</h3>
+            </fieldset>
+            <fieldset class="payment-fieldset">
+                <legend>VOKSEN 18+</legend>
                     <label>
                         FORNAVN (IFØLGE PASS):
                         <input type="text" name="fornavn" value="" maxlength="45" required>
@@ -111,10 +114,11 @@
                         MANN
                         <input type="radio" name="valg_2">
                     </label>
+                </fieldset>
                     <a href="#" id="button-payment">Siste trinn <i class="fa-solid fa-arrow-right"></i></a>
             </form>
         </section>
-        <section>
+        <section class="visually-hidden">
             <aside>
                 <img src="img/landscape-2016308_640.jpg" alt="Basseng">
                 <h3>Parga Beach</h3>
