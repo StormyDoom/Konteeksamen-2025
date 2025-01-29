@@ -393,11 +393,10 @@ footer {
     height: 300px;
     margin: 0;
     align-items: flex-start;
-    position: relative;
 
     .fa-arrow-right{
         position: absolute;
-        top: 50%;
+        top: 27%;
         left: 87%;
         font-size: xx-large;
         border-radius: 20px;
@@ -407,7 +406,7 @@ footer {
 
     .fa-arrow-left{
         position: absolute;
-        top: 50%;
+        top: 27%;
         font-size: xx-large;
         background-color: #ddd8ca;
         border-radius: 20px;
@@ -416,8 +415,8 @@ footer {
 
     .fa-heart{
         position: absolute;
-        bottom: 83%;
-        left: 87%;
+        top: 13%;
+        left: 83%;
         font-size: x-large;
         color: red;
         background-color: #ddd8ca;
@@ -427,7 +426,7 @@ footer {
 
     .fa-images{
         position: absolute;
-        top: 85%;
+        top: 42%;
         left: 83%;
         font-size: large;
         background-color: #ddd8ca;
@@ -716,18 +715,55 @@ footer {
     }
 }
 
+.visually-hidden{
+    display: none;
+}
+
 .email{
     display: block;
     margin-top: 10px;
 }
 
-.visually-hidden{
-    display: none;
+.global-header{
+    .hidden-mobile{
+        display: none;
+    }
 }
 
 @media screen and (width > 800px){
     .visually-hidden{
         display: block;
+    }
+
+    .global-header{
+        .hidden-desktop{
+            display: none;
+        }
+        .hidden-mobile{
+            display: flex;
+        }
+
+        .outline-button{
+            border: solid;
+            border-color: #1ca2c1;
+            border-radius: 69px;
+            padding: 0.5rem;
+            
+            a{
+                color:#1ca2c1;
+            }
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: end;
+
+            div{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+        }
     }
 }
 
