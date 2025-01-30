@@ -16,10 +16,23 @@
     <header>
         <nav class="global-header">
             <a href="index.html"><img src="img/fav.png" alt="Logo"></a>
-            <ul>
+            <ul class="hidden-desktop">
                 <li> <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <ul class="hidden-mobile">
+                <li>
+                    <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="outline-button">Opprett en konto</a>
+                    <a href="#" class="outline-button"><i class="fa-solid fa-user"></i> Min side</a>
+                </li>
+                <li>
+                    <a href="index.html#tips-inspiration">Tips og inspirasjon</a>
+                    <a href="hotell.html">Hotell</a>
+                    <a href="https://www.norwegian.no/" target="_blank">Fly</a>
+                    <a href="#footer">Kontakt</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -76,7 +89,7 @@
                 <img src="img/Skjermbilde-2025-01-14-205610.png" alt="Kart over område">
             </aside>
         </section>
-        <h2  id="rooms" class="head-room">Velg rom</h2>
+        <h2 id="rooms" class="head-room">Velg rom</h2>
         <section class="rooms-flex">
             <article class="room">
                 <img src="img/beach-666122_640.jpg" alt="Bildet av rommet">
@@ -140,7 +153,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <section class="flags-footer">
                 <ul>
                     <li><img src="flags/sweden.png" alt="Sverige flagg">Sverige</li>
@@ -150,7 +163,7 @@
                     <li><img src="flags/netherlands.png" alt="Nederland flagg">Nederland</li>
                 </ul>
         </section>
-        <section>
+        <section class="payment-footer">
             <h4>BETALINGSMETODER</h4>
             <i class="fa-brands fa-cc-visa"></i>
             <i class="fa-brands fa-cc-mastercard"></i>
@@ -158,8 +171,7 @@
             <i class="fa-brands fa-cc-apple-pay"></i>
             <i class="fa-brands fa-cc-amazon-pay"></i>
         </section>
-        <div class="footer-wrapper">
-            <section>
+            <section class="news-footer">
             <h4>NYHETER & TILBUD</h4>
             <form class="newsletter">
                 <fieldset>
@@ -170,7 +182,7 @@
             </form>
             <a href="#">Kjøp reisegavekort</a>
             </section>
-            <section>
+            <section class="customer-footer">
                 <nav>
                     <h4>KUNDESERVICE</h4>
                     <ul>
@@ -181,7 +193,6 @@
                     </ul>
                 </nav>
             </section>
-        </div>
             <section class="social-media-footer">
                 <h4>SOSIALE MEDIER</h4>
                 <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
