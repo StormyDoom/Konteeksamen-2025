@@ -601,6 +601,19 @@ footer {
     }
 }
 
+.info-div{
+    display: flex;
+    flex-wrap: wrap;
+
+    .section-div{
+        max-width: 600px;
+    }
+
+    aside{
+        max-width: 300px;
+    }
+}
+
 .overview {
     display: flex;
     flex-wrap: wrap;
@@ -669,18 +682,6 @@ footer {
     align-items: center;
 }
 
-.div-info{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media screen and (width > 800px){
-    .facility{
-        display: flex;
-        flex: 400px;
-    }
-}
-
 .area {
     margin: 0;
 
@@ -739,6 +740,45 @@ footer {
 .review {
     font-weight: 600;
     font-size: small;
+}
+
+.order-grid{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+
+    nav{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .payment-section{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    aside{
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        img{
+            max-width: 400px;
+        }
+
+        ul{
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+            padding-block: 5px;
+
+        }
+
+        .fa-sun{
+            color: #ffcf40;
+        }
+    }
 }
 
 .list-info {
